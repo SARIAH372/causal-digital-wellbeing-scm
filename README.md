@@ -79,28 +79,14 @@ Each treatment is assigned via a **confounded mechanism** reflecting realistic s
 Each treatment is evaluated using **three complementary estimators**:
 
 #### 1. G-formula (Outcome Regression)
-\[
-\hat{\tau}_{G} = \mathbb{E}[\hat{m}_1(X) - \hat{m}_0(X)]
-\]
+
+
 
 #### 2. Inverse Probability Weighting (IPW)
-\[
-\hat{\tau}_{IPW} =
-\mathbb{E}\left[
-\frac{T Y}{\hat{e}(X)} -
-\frac{(1-T) Y}{1-\hat{e}(X)}
-\right]
-\]
+
 
 #### 3. Doubly Robust AIPW
-\[
-\hat{\tau}_{AIPW} =
-\mathbb{E}\left[
-\hat{m}_1(X) - \hat{m}_0(X)
-+ \frac{T}{\hat{e}(X)} (Y - \hat{m}_1(X))
-- \frac{1-T}{1-\hat{e}(X)} (Y - \hat{m}_0(X))
-\right]
-\]
+
 
 AIPW remains consistent if **either** the propensity model or the outcome model is correctly specified.
 
@@ -260,5 +246,5 @@ Not intended for clinical, policy, or individual-level decision-making.
 
 ---
 
-## Output Structure
+
 
